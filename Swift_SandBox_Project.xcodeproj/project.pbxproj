@@ -10,7 +10,7 @@
 		CCF5AAF22BBB064F006F4D97 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF5AAF12BBB064F006F4D97 /* App.swift */; };
 		CCF5AAF62BBB0650006F4D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF5AAF52BBB0650006F4D97 /* Assets.xcassets */; };
 		CCF5AAF92BBB0650006F4D97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF5AAF82BBB0650006F4D97 /* Preview Assets.xcassets */; };
-		CCF5AB022BBB070B006F4D97 /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = CCF5AB012BBB070B006F4D97 /* AppFeature */; };
+		CCF5AB0D2BBB1683006F4D97 /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = CCF5AB0C2BBB1683006F4D97 /* AppFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +18,8 @@
 		CCF5AAF12BBB064F006F4D97 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CCF5AAF52BBB0650006F4D97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCF5AAF82BBB0650006F4D97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CCF5AAFF2BBB0682006F4D97 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyLibrary; path = ../MyLibrary; sourceTree = "<group>"; };
+		CCF5AB062BBB14D1006F4D97 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MyLibrary; sourceTree = "<group>"; };
+		CCF5AB092BBB155D006F4D97 /* ProjectLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ProjectLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF5AB022BBB070B006F4D97 /* AppFeature in Frameworks */,
+				CCF5AB0D2BBB1683006F4D97 /* AppFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +37,7 @@
 		CCF5AAE52BBB064F006F4D97 = {
 			isa = PBXGroup;
 			children = (
-				CCF5AAFF2BBB0682006F4D97 /* MyLibrary */,
+				CCF5AB092BBB155D006F4D97 /* ProjectLibrary */,
 				CCF5AAF02BBB064F006F4D97 /* Swift_SandBox_Project */,
 				CCF5AAEF2BBB064F006F4D97 /* Products */,
 				CCF5AB002BBB070B006F4D97 /* Frameworks */,
@@ -72,6 +73,7 @@
 		CCF5AB002BBB070B006F4D97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCF5AB062BBB14D1006F4D97 /* MyLibrary */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,7 +95,7 @@
 			);
 			name = Swift_SandBox_Project;
 			packageProductDependencies = (
-				CCF5AB012BBB070B006F4D97 /* AppFeature */,
+				CCF5AB0C2BBB1683006F4D97 /* AppFeature */,
 			);
 			productName = Swift_SandBox_Project;
 			productReference = CCF5AAEE2BBB064F006F4D97 /* Swift_SandBox_Project.app */;
@@ -123,6 +125,8 @@
 				Base,
 			);
 			mainGroup = CCF5AAE52BBB064F006F4D97;
+			packageReferences = (
+			);
 			productRefGroup = CCF5AAEF2BBB064F006F4D97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -357,7 +361,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CCF5AB012BBB070B006F4D97 /* AppFeature */ = {
+		CCF5AB0C2BBB1683006F4D97 /* AppFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppFeature;
 		};
