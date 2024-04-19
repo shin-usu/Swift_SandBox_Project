@@ -1,29 +1,25 @@
 import XCTest
 import SnapshotTesting
+import SnapshotTestingHEIC
 @testable import AppFeature
-
-var smallLayout: SwiftUISnapshotLayout {
-    var layout: ViewImageConfig = .iPhoneSe(.portrait)
-    layout.safeArea = .zero
-    return .device(config: layout)
-}
-var bigLayout: SwiftUISnapshotLayout {
-    var layout: ViewImageConfig = .iPhone13ProMax(.portrait)
-    layout.safeArea = .zero
-    return .device(config: layout)
-}
 
 final class MyLibraryTests: XCTestCase {
     func testRootViewSnapshot() throws {
         let view = RootView()
+
         assertSnapshot(
             of: view,
-            as: .image(layout: bigLayout),
+            as: .imageHEIC(layout: .device(config: .iPhone13ProMax)),
             named: "iPhone13ProMax"
         )
         assertSnapshot(
             of: view,
-            as: .image(layout: smallLayout),
+            as: .imageHEIC(layout: .device(config: .iPhone13Pro)),
+            named: "iPhone13Pro"
+        )
+        assertSnapshot(
+            of: view,
+            as: .imageHEIC(layout: .device(config: .iPhoneSe)),
             named: "iPhoneSe"
         )
     }

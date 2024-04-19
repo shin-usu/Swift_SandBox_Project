@@ -1,6 +1,15 @@
 {
-  "originHash" : "0852ebf350a7d40435ceb65e518101fa138c6c92502f19a09fed6b77945763e1",
+  "originHash" : "cf4710b35c366659ca23cf8e88d6dbc4234503cc6a5adc9cf74121b56f03ca92",
   "pins" : [
+    {
+      "identity" : "snapshottestingheic",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alexey1312/SnapshotTestingHEIC.git",
+      "state" : {
+        "revision" : "77d47239adf4e6c714c31b1854ff7ca5ba072309",
+        "version" : "1.4.0"
+      }
+    },
     {
       "identity" : "swift-snapshot-testing",
       "kind" : "remoteSourceControl",

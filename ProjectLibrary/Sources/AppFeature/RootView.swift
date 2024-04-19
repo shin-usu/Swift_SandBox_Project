@@ -8,7 +8,7 @@ public struct RootView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!!")
+            Text("Hello World!")
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
