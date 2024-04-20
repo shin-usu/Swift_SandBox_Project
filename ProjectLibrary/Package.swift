@@ -17,17 +17,21 @@ let package = Package(
             from: "1.15.4"
           ),
         .package(url: "https://github.com/alexey1312/SnapshotTestingHEIC.git", from: "1.4.0"),
+        .package(url: "https://github.com/BarredEwe/Prefire", from: "2.1.1"),
     ],
     targets: [
         .target(
-            name: "AppFeature"),
+            name: "AppFeature", dependencies: ["Prefire"], plugins: [.plugin(name: "PrefirePlaybookPlugin", package: "Prefire")]),
         .testTarget(
             name: "AppFeatureTests",
             dependencies: [
                 "AppFeature",
                 .snapshotTesting,
                 .snapshotTestingHeic,
-            ]),
+                "Prefire",
+            ],
+            plugins: [.plugin(name: "PrefireTestsPlugin", package: "Prefire")]
+        ),
     ]
 )
 
